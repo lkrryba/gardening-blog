@@ -257,32 +257,10 @@ footer {
 
 .photo-cred-container {
     position: relative;
-}
-
-.photo-cred-img {
-    width: 100%;
-    max-width: 100%;  
-    display: block;
-    object-fit: cover;
-    max-height: 250px;
-    object-position: center;  
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
     opacity: 0.7; 
-}
-
-
-.photo-cred-img:hover ~ .photo-cred-text,
- .photo-cred-text:hover {
-    color: white;
-    background: black;
-}
-
-.photo-cred-img:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.position-top {
-    object-position: top;       
 }
 
 .photo-cred-text {
@@ -296,6 +274,40 @@ footer {
     border-radius: 5px;
 }
 
+.photo-cred-container:hover,
+.photo-cred-container:focus
+ {
+    opacity: 1; 
+    cursor: pointer;
+}
+
+.photo-cred-container:hover .photo-cred-text,
+ .photo-cred-text:hover {
+    color: white;
+    background: black;
+}
+
+.photo-cred-hose {
+    background-image: url("images/gardener.jpg");
+}
+
+.photo-cred-bay {
+    background-image: url("images/bay-tree.jpg");
+}
+
+.photo-cred-garlic {
+    background-image: url("images/garlic.jpg");
+}
+
+.photo-cred-willow {
+    background-image: url("images/willow.jpg");
+    background-position: bottom;
+}
+
+.position-top {
+    object-position: top;       
+}
+
 /* desktop styles */
 @media only screen and (min-width: 650px) {
   header,
@@ -307,10 +319,6 @@ footer {
   header {
     align-items: center;
     justify-content: space-between;
-    }
-  
-  .container-flex {
-    /* justify-content: space-between; */
     }
   
   .title-container {
@@ -351,8 +359,13 @@ footer {
     grid-template-columns: 1fr 1fr; 
     }
         
-    .overlay {
-        width: 50%;
+    .photo-cred-hose {
+        background-position: top;
+    }
+
+
+    .photo-cred-willow {
+        background-position: center;
     }
 
 
