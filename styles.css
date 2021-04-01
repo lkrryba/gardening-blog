@@ -4,7 +4,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.125rem;
     color: var(--blog-black);
-    /* line-height: 1.6; */
+    line-height: 1.6;
 }
 
 :root {
@@ -247,12 +247,12 @@ footer {
 }
 
 .photo-cred-main {
-    width: 100%;    
+    width: 100%; 
 }
 
 .photo-cred-imgs {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;  
 }
 
 .photo-cred-container {
@@ -264,7 +264,7 @@ footer {
     max-width: 100%;  
     display: block;
     object-fit: cover;
-    max-height: 210px;
+    max-height: 250px;
     object-position: center;  
     opacity: 0.7; 
 }
