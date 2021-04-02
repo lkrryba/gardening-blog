@@ -267,11 +267,12 @@ footer {
     position: absolute;
     margin: 0.25em auto auto 0.25em;
     top:0;
-    color: black;
+    color: white;
     font-weight: 700;
     z-index: 3;
     padding: 0.25em 0.5em;
     border-radius: 5px;
+    opacity: 1;
 }
 
 .photo-cred-container:hover,
